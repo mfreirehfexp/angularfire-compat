@@ -9,7 +9,7 @@ import {
   ɵapplyMixins,
   FirebaseApp
 } from '@angular/fire';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { proxyPolyfillCompat } from './base';
 import { ɵfetchInstance } from '@angular/fire';
 

@@ -12,7 +12,7 @@ import {
   ɵPromiseProxy,
   ɵapplyMixins
 } from '@angular/fire';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { proxyPolyfillCompat } from './base';
 import { HttpsCallableOptions } from '@firebase/functions-types';
 import { ɵfetchInstance } from '@angular/fire';

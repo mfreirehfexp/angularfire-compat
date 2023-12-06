@@ -28,7 +28,7 @@ import {
   ɵapplyMixins
 } from '@angular/fire';
 import { isPlatformBrowser } from '@angular/common';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { Settings } from './interfaces';
 import { proxyPolyfillCompat } from './base';
 import { ɵfetchInstance } from '@angular/fire';

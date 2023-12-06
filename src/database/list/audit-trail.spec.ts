@@ -4,7 +4,7 @@ import { TestBed } from '@angular/core/testing';
 import { COMMON_CONFIG } from '../../test-config';
 import { skip } from 'rxjs/operators';
 import 'firebase/database';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { rando } from '../../firestore/utils.spec';
 
 describe('auditTrail', () => {

@@ -1,4 +1,4 @@
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { AngularFireModule, FirebaseApp } from '@angular/fire';
 import { AngularFireDatabase, AngularFireDatabaseModule, ChildEvent, stateChanges, URL } from '@angular/fire/database';
 import { TestBed } from '@angular/core/testing';

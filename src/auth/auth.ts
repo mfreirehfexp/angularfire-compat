@@ -13,7 +13,7 @@ import {
   ɵkeepUnstableUntilFirstFactory,
   ɵapplyMixins
 } from '@angular/fire';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { isPlatformServer } from '@angular/common';
 import { proxyPolyfillCompat } from './base';
 import { ɵfetchInstance } from '@angular/fire';
@@ -119,7 +119,7 @@ export class AngularFireAuth {
     } else {
 
       // HACK, as we're exporting auth.Auth, rather than auth, developers importing firebase.auth
-      //       (e.g, `import { auth } from 'firebase/app'`) are getting an undefined auth object unexpectedly
+      //       (e.g, `import { auth } from 'firebase/compat/app'`) are getting an undefined auth object unexpectedly
       //       as we're completely lazy. Let's eagerly load the Auth SDK here.
       //       There could potentially be race conditions still... but this greatly decreases the odds while
       //       we reevaluate the API.
